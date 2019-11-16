@@ -4,7 +4,7 @@ pipeline {
 		stage('Compile') {
 			steps {
 				dir('groovy-micronaut') {
-				   	sh "./gradlew build"
+				   	sh "gradlew build"
 			   	}
 			}
 		}
