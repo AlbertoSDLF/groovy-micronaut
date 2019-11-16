@@ -3,6 +3,7 @@ pipeline {
 	stages {
 		stage('Compile') {
 			steps {
+				sh "ls -lisa"
 				sh "./gradlew build"
 			}
 		}
