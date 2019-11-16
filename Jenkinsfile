@@ -1,7 +1,7 @@
 pipeline {
-	agent any
+	agent gradle
 	stages {
-		stage('Test') {
+		stage('Compile') {
 			steps {
 			   	sh "gradlew build"
 			}
