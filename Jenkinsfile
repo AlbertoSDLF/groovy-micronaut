@@ -1,7 +1,10 @@
 pipeline {
 	stages {
 		stage('Test') {
-		   	ansiColor('xterm') {
+			steps {
+			   	ansiColor('xterm') {
+			   		echo 'Hello World'
+				}
 			}
 		}
 	}
