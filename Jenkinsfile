@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Compile') {
 			steps {
-				sh "ls -lisa"
+				sh "ls -lisa groovy-micronaut"
 				sh "./gradlew build"
 			}
 		}
