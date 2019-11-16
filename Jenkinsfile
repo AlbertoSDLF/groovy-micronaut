@@ -1,5 +1,5 @@
 pipeline {
-	agent gradle
+	agent any
 	stages {
 		stage('Compile') {
 			steps {
