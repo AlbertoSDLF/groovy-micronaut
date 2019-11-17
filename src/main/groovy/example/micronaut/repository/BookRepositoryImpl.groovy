@@ -1,11 +1,11 @@
-package example.micronaut
+package example.micronaut.repository
 
+import example.micronaut.entity.Book
 import groovy.transform.CompileStatic
-import javax.inject.Singleton
 
 @CompileStatic
 @Singleton
-class BooksRepositoryImpl implements BooksRepository {
+class BookRepositoryImpl implements BookRepository {
 
 	@Override
 	List<Book> findAll() {

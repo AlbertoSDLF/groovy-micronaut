@@ -1,5 +1,6 @@
 package example.micronaut
 
+import example.micronaut.entity.Book
 import io.micronaut.context.ApplicationContext
 import io.micronaut.core.type.Argument
 import io.micronaut.http.HttpRequest
@@ -19,7 +20,7 @@ class BooksControllerSpec extends Specification {
 
 	void "test books retrieve"() {
 		when:
-		HttpRequest request = HttpRequest.GET('/api/books')
+		HttpRequest request = HttpRequest.GET('/api/book')
 		List<Book> books = client.toBlocking().retrieve(request, Argument.of(List, Book))
 
 		then:

@@ -1,4 +1,4 @@
-package example.micronaut
+package example.micronaut.entity
 
 import groovy.transform.CompileStatic
 import groovy.transform.TupleConstructor
@@ -7,5 +7,5 @@ import groovy.transform.TupleConstructor
 @TupleConstructor
 class Book {
 	String isbn
-	String name
+	String title
 }

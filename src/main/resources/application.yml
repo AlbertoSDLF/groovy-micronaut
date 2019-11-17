@@ -1,3 +1,44 @@
+endpoints:
+  beans:
+    enabled: true
+    sensitive: false 
+  info:
+    enabled: true
+    sensitive: false
+
+jackson:
+  serialization:
+    indentOutput: true
+
 micronaut:
   application:
     name: books
+  server:
+    port: 8080
+  security:
+    enabled: true
+    intercept-url-map:
+      -
+        pattern: /**/secure
+        access:
+          - isAuthenticated()
+      -
+        pattern: /**
+        access:
+          - isAnonymous()
+#    ip-patterns:
+#    token:
+#      basic-auth:
+#        enabled: false
+#      enabled: false  
+#      jwt:
+#        bearer:
+#          enabled: true
+#        enabled: true
+#        signatures:
+#          secret:
+#            generator:
+#              base64: true
+#              jws-algorithm: HS256
+#              secret: cGxlYXNlQ2hhbmdlVGhpc1NlY3JldEZvckFOZXdPbmU=
+    
