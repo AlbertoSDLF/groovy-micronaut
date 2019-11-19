@@ -1,5 +1,7 @@
 package example.micronaut.repository
 
+import javax.inject.Singleton
+
 import example.micronaut.entity.Book
 import groovy.transform.CompileStatic
 

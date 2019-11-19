@@ -16,16 +16,16 @@ micronaut:
   server:
     port: 8080
   security:
-    enabled: true
-    intercept-url-map:
-      -
-        pattern: /**/secure
-        access:
-          - isAuthenticated()
-      -
-        pattern: /**
-        access:
-          - isAnonymous()
+    enabled: false
+#    intercept-url-map:
+#      -
+#        pattern: /**/secure
+#        access:
+#          - isAuthenticated()
+#      -
+#        pattern: /**
+#        access:
+#          - isAnonymous()
 #    ip-patterns:
 #    token:
 #      basic-auth:

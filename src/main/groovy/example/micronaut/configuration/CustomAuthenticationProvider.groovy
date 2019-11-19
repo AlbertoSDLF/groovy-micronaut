@@ -1,7 +1,5 @@
 package example.micronaut.configuration
 
-import javax.inject.Singleton
-
 import org.reactivestreams.Publisher
 
 import io.micronaut.security.authentication.AuthenticationFailed
@@ -11,7 +9,7 @@ import io.micronaut.security.authentication.AuthenticationResponse
 import io.micronaut.security.authentication.UserDetails
 import io.reactivex.Flowable
 
-@Singleton
+//@Singleton
 class CustomAuthenticationProvider implements AuthenticationProvider {
 	@Override
 	public Publisher<AuthenticationResponse> authenticate(AuthenticationRequest authenticationRequest) {

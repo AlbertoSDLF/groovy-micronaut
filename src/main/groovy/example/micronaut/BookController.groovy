@@ -23,8 +23,8 @@ class BookController {
 		bookRepository.findAll()
 	}
 
-	@Get("/secure")
-	List<Book> secureList() {
-		bookRepository.findAll()
-	}
+	//	@Get("/secure")
+	//	List<Book> secureList() {
+	//		bookRepository.findAll()
+	//	}
 }
